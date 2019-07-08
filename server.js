@@ -4,9 +4,9 @@ var mysql = require("mysql");
 var bodyParser = require("body-parser");
 
 
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.static("public"));
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
