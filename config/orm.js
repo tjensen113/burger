@@ -1,6 +1,14 @@
 var connection = require("../config/connection.js");
 
+function printQuestionMarks(num) {
+  var arr = [];
 
+  for (var i = 0; i < num; i++) {
+    arr.push("?");
+  }
+
+  return arr.toString();
+} 
 
 var orm = {
   selectAll: function(table,cb) {
@@ -12,7 +20,7 @@ var orm = {
   },
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
-
+ 
     queryString += " (";
     queryString += cols.toString();
     queryString += ") ";
