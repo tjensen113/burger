@@ -1,8 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "/Users/thomasjensen/Documents/wismil201901fsf3"
+        }
+    ]
 }
