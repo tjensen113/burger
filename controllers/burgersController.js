@@ -10,5 +10,16 @@ var router = express.Router();
          };
          console.log(hdbrsObj);
          res.render("index",hdbrsObj);
+     });
+
+     router.post("/api/burgers",function(req,res){
+         burger.insertOne(
+             ["burger_name","devoured"],
+             [req.body.burger_name, req.body.devoured],
+             function(res){
+                 res.json({id: result.insertId});
+                 
+             }
+         )
      })
  })
